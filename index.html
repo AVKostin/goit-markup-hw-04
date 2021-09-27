@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--              Хедер навигация            -->
+    <header class="header header-border">
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a href="index.html" class="header-logo link accent"
+            >Web<span class="header-logo-text">Studio</span></a
+          >
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link link currentLink" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--             хедер контакты                    -->
+
+        <div class="header-contact">
+          <a
+            class="header-contacts-link link accent"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <a
+            class="header-contacts-link link tel-color"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!--                  Hero                   -->
+
+    <main>
+      <section class="hero container">
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <button class="header-btn btn" type="button">Заказать услугу</button>
+      </section>
+
+      <!--             секция "наши особенности"       -->
+
+      <section class="feature container section">
+        <ul class="feature-title-block list">
+          <li class="feature-title-item">
+            <h3 class="feature-title">Внимание к деталям</h3>
+            <p class="feature-title-text">
+              Идейные соображения, а также начало повседневной работы по
+              формированию позиции.
+            </p>
+          </li>
+
+          <li class="feature-title-item">
+            <h3 class="feature-title">Пунктуальность</h3>
+            <p class="feature-title-text">
+              Задача организации, в особенности же рамки и место обучения кадров
+              влечет за собой.
+            </p>
+          </li>
+
+          <li class="feature-title-item">
+            <h3 class="feature-title">Планирование</h3>
+            <p class="feature-title-text">
+              Равным образом консультация с широким активом в значительной
+              степени обуславливает.
+            </p>
+          </li>
+
+          <li class="feature-title-item">
+            <h3 class="feature-title">Современные технологии</h3>
+            <p class="feature-title-text">
+              Значимость этих проблем настолько очевидна, что реализация
+              плановых заданий.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!--     секция "чем мы занимаемся"        -->
+
+      <section class="our-technology container section">
+        <h2 class="our-technology-title">Чем мы занимаемся</h2>
+        <ul class="our-technology-list">
+          <li class="our-technology-item list">
+            <img
+              src="./images/box-1.jpg"
+              alt="печатаем код 1"
+              width="370"
+              height="294"
+            />
+          </li>
+          <li class="our-technology-item list">
+            <img
+              src="./images/box-2.jpg"
+              alt="печатаем код 2"
+              width="370"
+              height="294"
+            />
+          </li>
+          <li class="our-technology-item list">
+            <img
+              src="./images/box-3.jpg"
+              alt="печатаем код 3"
+              width="370"
+              height="294"
+            />
+          </li>
+        </ul>
+      </section>
+
+      <!--     секция "наша команда"        -->
+
+      <section class="our-commands">
+        <div class="container section">
+          <h2 class="our-commands-title">Наша команда</h2>
+          <ul class="our-commands-list list">
+            <div class="our-commands-item">
+              <li class="commands-border">
+                <img
+                  src="./images/img-1.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="our-commands-name">Игорь Демьяненко</h3>
+                <p lang="en" class="our-commands-workspace">Product Manager</p>
+              </li>
+            </div>
+            <div class="our-commands-item">
+              <li class="commands-border">
+                <img
+                  src="./images/img-2.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="our-commands-name">Ольга Репина</h3>
+                <p lang="en" class="our-commands-workspace">
+                  Frontend Developer
+                </p>
+              </li>
+            </div>
+            <div class="our-commands-item">
+              <li class="commands-border">
+                <img
+                  src="./images/img-3.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="our-commands-name">Николай Тарасов</h3>
+                <p lang="en" class="our-commands-workspace">Markrting</p>
+              </li>
+            </div>
+            <div class="our-commands-item">
+              <li class="commands-border">
+                <img
+                  src="./images/img-4.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="our-commands-name">Михаил Ермаков</h3>
+                <p lang="en" class="our-commands-workspace">UI Designer</p>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--       адреса, телефоны, мэйлы      -->
+
+    <footer class="footer">
+      <div class="container">
+        <a href="./index.html" class="footer-logo link accent"
+          >Web<span class="footer-logo-text">Studio</span></a
+        >
+        <address>
+          <ul class="footer-list list">
+            <li class="adress-ident">
+              <a href="" class="adress link">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="adress-ident">
+              <a href="mailto:info@example.com" class="footer-contact-link link"
+                >info@example.com</a
+              >
+            </li>
+            <li class="adress-ident">
+              <a href="tel:+380991111111" class="footer-contact-link link"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>
