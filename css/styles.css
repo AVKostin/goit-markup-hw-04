@@ -423,7 +423,7 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .our-projects-list {
