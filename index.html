@@ -43,16 +43,18 @@
 
         <!--             хедер контакты                    -->
 
-        <div class="header-contact">
-          <a
-            class="header-contacts-link link accent"
-            href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
+        <div class="header-contact">  
+          <a href="mailto:info@devstudio.com" class="header-contacts-link link accent"> 
+               <svg class="header-icon" width="16" height="12">
+               <use href="./images/sprite.svg#icon-envelope-hover"></use>
+              </svg>info@devstudio.com</a>
           <a
             class="header-contacts-link link tel-color"
             href="tel:+380961111111"
-            >+38 096 111 11 11</a
+            >
+            <svg class="header-icon" width="10" height="16">
+               <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>+38 096 111 11 11</a
           >
         </div>
       </div>
@@ -61,8 +63,8 @@
     <!--                  Hero                   -->
 
     <main>
-      <section class="hero">
-        <div class="container">
+      <section class="hero container">
+        <div class="">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="header-btn btn" type="button">Заказать услугу</button>
         </div>
@@ -74,6 +76,12 @@
         <div class="container">
           <ul class="feature-title-list list">
             <li class="feature-title-item">
+              <div class="feature-icon-block">
+                      <svg class="feature-icon" width="70" height="70">
+                      <use href="./images/sprite.svg#icon-antenna"></use>
+                      </svg
+                  ></a>
+              </div>
               <h3 class="feature-title">Внимание к деталям</h3>
               <p class="feature-title-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -82,6 +90,12 @@
             </li>
 
             <li class="feature-title-item">
+              <div class="feature-icon-block">
+                      <svg class="feature-icon" width="70" height="70">
+                      <use href="./images/sprite.svg#icon-clock"></use>
+                      </svg
+                  >
+              </div>
               <h3 class="feature-title">Пунктуальность</h3>
               <p class="feature-title-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -90,6 +104,12 @@
             </li>
 
             <li class="feature-title-item">
+              <div class="feature-icon-block">
+                      <svg class="feature-icon" width="70" height="70">
+                      <use href="./images/sprite.svg#icon-diagram"></use>
+                      </svg
+                  >
+              </div>
               <h3 class="feature-title">Планирование</h3>
               <p class="feature-title-text">
                 Равным образом консультация с широким активом в значительной
@@ -98,6 +118,12 @@
             </li>
 
             <li class="feature-title-item">
+              <div class="feature-icon-block">
+                      <svg class="feature-icon" width="70" height="70">
+                      <use href="./images/sprite.svg#icon-astronaut"></use>
+                      </svg
+                  >
+              </div>
               <h3 class="feature-title">Современные технологии</h3>
               <p class="feature-title-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -308,13 +334,68 @@
           </ul>
         </div>
       </section>
+      <!-- Постоянные клиенты . regular-clients sections-->
+        <section class="regular-clients section">
+        <div class="container">
+          <h2 class="regular-clients-title">Постоянные клиенты</h2>
+             <ul class="regular-clients-list list">
+             <li class="regular-clients-item">
+                    <a href="" class="regular-clients-link link">
+                      <svg class="clients-icon" width="106" height="60">
+                        <use href="./images/sprite.svg#icon-logo1"></use>
+                      </svg>
+                    </a>
+             </li>
+             <li class="regular-clients-item">
+                    <a href="" class="social-link link">
+                      <svg class="clients-icon" width="106" height="60">
+                        <use href="./images/sprite.svg#icon-logo2"></use>
+                      </svg>
+                    </a>
+            
+            </li>
+            <li class="regular-clients-item">
+                    <a href="" class="social-link link">
+                      <svg class="clients-icon" width="106" height="60">
+                        <use href="./images/sprite.svg#icon-logo3"></use>
+                      </svg>
+                    </a>
+            </li>
+            <li class="regular-clients-item">
+                    <a href="" class="social-link link">
+                      <svg class="clients-icon" width="106" height="60">
+                        <use href="./images/sprite.svg#icon-logo4"></use>
+                      </svg>
+                    </a>
+            </li>
+            <li class="regular-clients-item">
+                    <a href="" class="social-link link">
+                      <svg class="clients-icon" width="106" height="60">
+                        <use href="./images/sprite.svg#icon-logo5"></use>
+                      </svg>
+                    </a>
+            </li>
+            <li class="regular-clients-item">
+                    <a href="" class="social-link link">
+                      <svg class="clients-icon" width="106" height="60">
+                        <use href="./images/sprite.svg#icon-logo6"></use>
+                      </svg>
+                    </a>
+            </li>
+          </ul>
+          </div>
+        </section>
+
+
+                  <!--  End Of Regular clients section -->
+
     </main>
 
     <!--       адреса, телефоны, мэйлы      -->
 
     <footer class="footer">
       <div class="container footer-contacts-wrap">
-        <section class="contacts section">
+        <section class="contacts">
           <a href="./index.html" class="footer-logo link accent"
             >Web<span class="footer-logo-text">Studio</span></a
           >
@@ -340,32 +421,32 @@
             </ul>
           </address>
         </section>
-        <section class="footer-social-section section">
+        <section class="footer-social-section">
           <div class="footer-social-list">
             <p class="footer-contact-title">Присоединяйтесь</p>
             <ul class="our-commands-list social-list list">
               <li class="social-item">
-                <a href="" class="social-link link">
-                  <svg class="social-icon" width="20" height="20">
+                <a href="" class="social-link-footer link">
+                  <svg class="social-icon-footer" width="20" height="20">
                     <use href="./images/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social-item">
-                <a href="" class="social-link link">
-                  <svg class="social-icon" width="20" height="20">
+                <a href="" class="social-link-footer link">
+                  <svg class="social-icon-footer" width="20" height="20">
                     <use href="./images/sprite.svg#icon-twitter"></use></svg
                 ></a>
               </li>
               <li class="social-item">
-                <a href="" class="social-link link">
-                  <svg class="social-icon" width="20" height="20">
+                <a href="" class="social-link-footer link">
+                  <svg class="social-icon-footer" width="20" height="20">
                     <use href="./images/sprite.svg#icon-facebook"></use></svg
                 ></a>
               </li>
               <li class="social-item">
-                <a href="" class="social-link link">
-                  <svg class="social-icon" width="20" height="20">
+                <a href="" class="social-link-footer link">
+                  <svg class="social-icon-footer" width="20" height="20">
                     <use href="./images/sprite.svg#icon-linkedin"></use></svg
                 ></a>
               </li>
