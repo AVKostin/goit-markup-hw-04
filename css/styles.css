@@ -162,14 +162,19 @@ body {
 .hero {
   margin: 0 auto;
   background: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(..//images/hero-img.jpg);
-  /* background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  width: 1600px; */
+  background-size: cover; /*
+  , */
+
   padding-bottom: 200px;
   padding-top: 200px;
+  width: 1600px;
 }
 
 .hero-title {
@@ -311,6 +316,9 @@ body {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
+.our-comands-bottom {
+  padding-bottom: 30px;
+}
 
 .our-commands-name {
   padding-top: 30px;
@@ -329,6 +337,48 @@ body {
   line-height: 1.19;
   text-align: center;
   color: var(--third-text-color);
+  margin-bottom: 16px;
+}
+
+/* --------- Иконки соцсетей ----------------- */
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* background-color: var(--accent-color); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: #ffffff;
+}
+
+.social-icon {
+  fill: #afb1b8;
+}
+
+.social-list {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.social-item + .social-item {
+  margin-left: 10px;
 }
 
 /* ---------- Footer ---------- */
@@ -381,6 +431,10 @@ body {
   color: var(--accent-color);
 }
 
+.footer-contacts-wrap {
+  display: flex;
+}
+
 .footer-contact-link {
   font-style: normal;
   font-size: 14px;
@@ -392,6 +446,30 @@ body {
 .footer-contact-link:hover {
   color: var(--accent-color);
 }
+
+.footer-contact-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts {
+  margin-right: 70px;
+}
+
+.footer-social-section {
+  display: flex;
+}
+
+/*  --------- End of Footer  -------------- */
 
 /* ---------- Portfolio ---------- */
 
