@@ -321,9 +321,7 @@ body {
 /* ---------- Our Commands ---------- */
 
 .our-commands {
-  /* width: auto; */
-  width: 1600px;
-    margin: auto;
+  width: auto;
   background-color: #f5f4fa;
 }
 
@@ -372,7 +370,6 @@ body {
 }
 
 .our-commands-workspace {
-  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -517,10 +514,8 @@ body {
   padding-top: 60px;
   padding-bottom: 50px;
   background-color: #2f303a;
-  /* width: auto; */
-  width: 1600px;
-    margin: auto;
-}
+  width: auto;
+ }
 
 .adress-ident {
   padding-bottom: 8px;
