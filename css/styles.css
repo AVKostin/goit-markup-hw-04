@@ -402,13 +402,12 @@ body {
   background-color: var(--backgound-color-base);
   border: 1px solid var(--primary-text-color);
   border-radius: 4px;
-  transition: background-color 300ms ease-in-out;
+ 
   cursor: pointer;
 }
 
 .regular-clients-icon {
   fill: var(--icon-color);
-  transition: fill 300ms ease-in-out;
 }
 
 .regular-clients-item:hover .regular-clients-icon,
