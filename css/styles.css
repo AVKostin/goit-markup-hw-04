@@ -1,14 +1,18 @@
 :root {
   --primary-title-color: #ffffff;
+  --backgound-color-base: #ffffff;
   --secondary-title-color: #212121;
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --third-text-color: #757575;
   --accent-color: #2196f3;
   --header-text-color: #212121;
-   --card-set-gap: 30px;
+  --icon-color: #afb1b8;
+  --card-set-gap: 30px;
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* ---------- Сброс некоторых стилей ---------- */
@@ -44,7 +48,7 @@ body {
 .container {
   /* background-color: salmon; */
   /* margin: 0 auto; */
-   margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
@@ -188,8 +192,7 @@ body {
   background-size: cover;
   padding-bottom: 200px;
   padding-top: 200px;
-  width: 1600px;
-  /* width: auto; */
+  max-width: 1600px;
 }
 
 .hero-title {
@@ -316,9 +319,9 @@ body {
 /* ---------- Our Commands ---------- */
 
 .our-commands {
-  /* width: auto; */
-  width: 1600px;
-    margin: auto;
+  width: auto;
+  /* width: 1600px;
+    margin: auto; */
   background-color: #f5f4fa;
 }
 
@@ -367,7 +370,7 @@ body {
 }
 
 .our-commands-workspace {
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -376,6 +379,8 @@ body {
 }
 
 /*-------------Постоянные клиенты--------------        */
+
+/*  ----------- Постоянные клиенты --------------        */
 
 .regular-clients-list {
   display: flex;
@@ -390,33 +395,27 @@ body {
   flex-basis: calc(100% / 6 - 30px);
 }
 
-.regular-clients-block {
-  width: 170px;
+.regular-clients-link {
+  width: 100%;
   height: 92px;
-  margin-left: 10px;
+  /* background-color: var(--accent-color); */
   display: flex;
   align-items: center;
   justify-content: center;
- }
-
-.regular-clients {
-
+  background-color: var(--backgound-color-base);
+  border: 1px solid var(--primary-text-color);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.clients-icon {
-   fill: #afb1b8;
-  /* transition: fill 300ms ease-in-out; */
+.regular-clients-icon {
+  fill: var(--icon-color);
 }
 
-.clients-icon:hover {
-  fill: var(--accent-color)
-}
-
-.clients-link {
-  /* width: 170px;
-  height: 92px; */
-
-  background: #f5f4fa;
+.regular-clients-item:hover .regular-clients-icon,
+.regular-clients-item:focus .regular-clients-icon {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* --------- Иконки соцсетей ----------------- */
@@ -462,7 +461,8 @@ body {
   fill: var(--primary-title-color);
 }
 
-.social-link-clients:hover {
+.regular-clients-item:hover .social-clients {
+  fill: var(--accent-color);
   border-color: var(--accent-color);
 }
 
@@ -490,7 +490,6 @@ body {
   fill: #afb1b8;
   border: 1px;
 }
-}
 
 .social-icon-footer {
   fill: #ffffff;
@@ -512,9 +511,9 @@ body {
   padding-top: 60px;
   padding-bottom: 50px;
   background-color: #2f303a;
-  /* width: auto; */
-  width: 1600px;
-    margin: auto;
+  width: auto;
+  /* width: 1600px;
+  margin: auto; */
 }
 
 .adress-ident {
@@ -583,11 +582,6 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-/* 
-.footer-social-list {
-  display: flex;
-  flex-wrap: wrap; 
-}  */
 
 .contacts {
   margin-right: 70px;
@@ -620,7 +614,8 @@ body {
 
 .btn-port:hover {
   color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-btn {
@@ -630,9 +625,6 @@ body {
   margin-left: 8px;
   border-radius: 4px;
   padding: 6px 22px;
-}
-
-.portfolio-btn-item {
 }
 
 .portfolio-btn-list {
@@ -649,18 +641,17 @@ body {
   margin-bottom: -30px;
 }
 
-
 .our-projects-item {
   display: block;
   margin-left: 30px;
   flex-basis: calc(100% / 3 - 30px);
   margin-bottom: 30px;
-
 }
 
 .our-projects-item:hover {
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-/* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .portfolio-btn:hover,
