@@ -392,33 +392,29 @@ body {
   flex-basis: calc(100% / 6 - 30px);
 }
 
-.regular-clients-block {
-  width: 170px;
+.regular-clients-link {
+  width: 100%;
   height: 92px;
-  margin-left: 10px;
+  /* background-color: var(--accent-color); */
   display: flex;
   align-items: center;
   justify-content: center;
- }
-
-.regular-clients {
-
+  background-color: var(--backgound-color-base);
+  border: 1px solid var(--primary-text-color);
+  border-radius: 4px;
+  transition: background-color 300ms ease-in-out;
+  cursor: pointer;
 }
 
-.clients-icon {
-   fill: #afb1b8;
-  /* transition: fill 300ms ease-in-out; */
+.regular-clients-icon {
+  fill: var(--icon-color);
+  transition: fill 300ms ease-in-out;
 }
 
-.clients-icon:hover {
-  fill: var(--accent-color)
-}
-
-.clients-link {
-  /* width: 170px;
-  height: 92px; */
-
-  background: #f5f4fa;
+.regular-clients-item:hover .regular-clients-icon,
+.regular-clients-item:focus .regular-clients-icon {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* --------- Иконки соцсетей ----------------- */
