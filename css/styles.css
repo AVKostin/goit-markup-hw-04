@@ -113,22 +113,6 @@ body {
   color: var(--accent-color);
 }
 
-.header-logo-text:hover {
-  color: var(--accent-color);
-}
-
-.header-logo:hover {
-  color: #000000;
-}
-
-.header-logo {
-  margin-right: 93px;
-}
-
-.header-logo-text {
-  color: var(--header-text-color);
-}
-
 .link {
   text-decoration: none;
 }
@@ -170,13 +154,33 @@ body {
 }
 
 /* ----------Header Logo ---------- */
+
+
 .header-logo {
   font-family: Raleway;
+  margin-right: 93px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
 }
+
+.header-logo-text {
+  color: var(--header-text-color);
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  color: #000000;
+}
+
+.header-logo:hover .header-logo-text,
+.header-logo:focus .header-logo-text {
+  color: var(--accent-color);
+}
+
+
+
 
 /* ---------- Hero Section ---------- */
 
@@ -379,6 +383,8 @@ body {
 
 /*-------------Постоянные клиенты--------------        */
 
+/*  ----------- Постоянные клиенты --------------        */
+
 .regular-clients-list {
   display: flex;
   align-items: center;
@@ -395,26 +401,24 @@ body {
 .regular-clients-link {
   width: 100%;
   height: 92px;
-  /* background-color: var(--accent-color); */
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--backgound-color-base);
-  border: 1px solid var(--primary-text-color);
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
- 
   cursor: pointer;
+ }
+
+.regular-clients-link:hover,
+.regular-clients-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .regular-clients-icon {
   fill: var(--icon-color);
-}
-
-.regular-clients-item:hover .regular-clients-icon,
-.regular-clients-item:focus .regular-clients-icon {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
-}
+ }
 
 /* --------- Иконки соцсетей ----------------- */
 
@@ -528,16 +532,17 @@ body {
   color: var(--accent-color);
 }
 
-.footer-logo:hover {
-  color: var(--primary-title-color);
-}
-
 .footer-logo-text {
   color: #ffffff;
 }
 
-.footer-logo-text:hover,
-.footer-logo-text:focus {
+.footer-logo:hover,
+.footer-logo:focus {
+  color: var(--primary-title-color);
+}
+
+.footer-logo:hover .footer-logo-text,
+.footer-logo:focus .footer-logo-text {
   color: var(--accent-color);
 }
 
@@ -549,7 +554,8 @@ body {
   color: #ffffff;
 }
 
-.adress:hover {
+.adress:hover,
+.adress:focus {
   color: var(--accent-color);
 }
 
@@ -565,7 +571,8 @@ body {
   padding-bottom: 9px;
 }
 
-.footer-contact-link:hover {
+.footer-contact-link:hover,
+.footer-contact-link:focus{
   color: var(--accent-color);
 }
 
